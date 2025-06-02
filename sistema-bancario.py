@@ -1,3 +1,6 @@
+from abc import ABC
+
+
 class Conta:
     pass
 
@@ -10,12 +13,15 @@ class Cliente:
 class PessoaFisica(Cliente):
     pass
 
-class Transacao():
+class Historico:
     pass
 
-class Deposito:
+class Transacao(ABC):
     pass
 
-class Saque:
+class Deposito(Transacao):
+    pass
+
+class Saque(Transacao):
     pass
 
